@@ -59,12 +59,96 @@
       <section
         style="
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           min-height: 100%;
-          margin: auto;
+          margin-inline: 5%;
         "
       >
-        <h1>Contactos</h1>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-top: 2%;
+          "
+        >
+          <h1 style="padding: 0%; margin: 0%">Contactos</h1>
+          <h2>Informacion de la empresa</h2>
+          <p style="padding: 0%; margin: 0%">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            ex id exercitationem ducimus enim consectetur corrupti quas ipsam.
+            Ad numquam soluta laudantium obcaecati? Corporis quas veritatis
+            eligendi? Ut, saepe iste.
+          </p>
+          <h2 style="padding: 0%; margin: 0%; margin-top: 5%">E-mail:</h2>
+          <p style="padding: 0%; margin: 0%">romeroeneil@gmail.com</p>
+          <h2>Atencion al cliente</h2>
+          <h3 style="padding: 0%; margin: 0%">Colombia</h3>
+          <p style="padding: 0%; margin: 0%">(57+) 602704003</p>
+          <p style="padding: 0%; margin: 0%">(57+) 3150151515</p>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-top: 2%;
+            gap: 2%;
+            position: relative; /* Se agrega position: relative; */
+          "
+        >
+          <img
+            src="../imgs/vip.png"
+            alt="vip"
+            width="50"
+            height="50"
+            style="
+              margin-bottom: -2%;
+              align-self: flex-end;
+              position: absolute; /* Se agrega position: absolute; */
+              top: -10%; /* Ajusta la posición vertical según necesites */
+              right: 0; /* Ajusta la posición horizontal según necesites */
+              z-index: 1; /* Se agrega z-index para que esté por encima del resto */
+            "
+          />
+
+          <input
+            style="padding: 2%; background-color: #d1c8c1"
+            type="text"
+            placeholder="Nombre"
+          />
+          <input
+            style="padding: 2%; background-color: #d1c8c1"
+            type="text"
+            placeholder="E-Mail"
+          />
+          <input
+            style="padding: 2%; background-color: #d1c8c1"
+            type="text"
+            placeholder="Asunto"
+          />
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="5"
+            placeholder="Mensaje"
+            style="padding: 2%; background-color: #d1c8c1"
+            rows="8"
+          ></textarea>
+          <button
+            style="
+              width: 20%;
+              background-color: #d1c8c1;
+              padding: 1%;
+              border-radius: 10%;
+              align-self: flex-end;
+              cursor: pointer;
+              margin-top: 5%;
+            "
+          >
+            Enviar
+          </button>
+        </div>
       </section>
 
       <footer
